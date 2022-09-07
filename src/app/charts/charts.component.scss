@@ -1,0 +1,20 @@
+.charts {
+  &__info {
+    display: flex;
+    gap: 56px;
+  }
+
+  &__value {
+    font-size: 2rem;
+  }
+
+  .title {
+    color: #81818d;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+  }
+
+
+}

@@ -1,0 +1,20 @@
+<div class="schedule">
+  <div class="schedule__traders">
+    <app-traders
+        *ngFor="let trader of viewList; let i  = index"
+        [trader]="trader"
+        [index]="i"
+        [active]="activeTrader.name"
+        (activeChange)="selectTrader($event)"
+    ></app-traders>
+  </div>
+
+  <div class="schedule__view">
+    <div *ngFor="let trader of viewList">
+      <app-charts
+        *ngIf="trader.name === activeTrader.name"
+        [trader]="trader"
+      ></app-charts>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+.schedule {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+
+  &__title {
+    font-size: 1rem;
+    color: #81818d;
+  }
+
+  &__traders {
+    margin-right: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 320px;
+  }
+
+  &__view {
+    border: 1px solid #e8eaed;
+    border-radius: 20px;
+    background: #fff;
+    width: 100%;
+    padding: 28px 24px;
+  }
+}

@@ -1,0 +1,23 @@
+.button {
+  padding: 16px 20px;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  min-width: 225px;
+  font-size: 1.142rem;
+  transition: ease-in .1s;
+
+  &__primary {
+    background: #8a24f3;
+
+    &:hover {
+      background: #701bc8;
+    }
+
+    &:active {
+      background: #4f118f;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+<div class="charts">
+  <div class="charts__info">
+    <div class="charts__info__block">
+      <h3 class="title">
+        Monthly profit
+      </h3>
+      <span class="charts__value">{{trader.monthly_profit}}%</span>
+    </div>
+
+    <div class="charts__info__block">
+      <h3 class="title">
+        Total profit
+      </h3>
+      <span class="charts__value">{{trader.total_profit}}%</span>
+    </div>
+
+    <div class="charts__info__block">
+      <h3 class="title">
+        In management
+      </h3>
+      <span class="charts__value">{{trader.capital | number}} USD</span>
+    </div>
+
+    <div class="charts__info__block">
+      <app-button [title]="'Copy Now'"></app-button>
+    </div>
+  </div>
+
+  <div #chart></div>
+</div>
+

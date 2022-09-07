@@ -1,0 +1,18 @@
+<div class="trader"
+     [class.trader__active]="trader.name === active"
+     (click)="activeChange.emit(trader)"
+  >
+  <img class="trader__flag"
+       [src]="trader.flag"
+       alt="Country flag">
+
+  <div class="trader__info">
+    <div class="trader__info__name">
+      {{index + 1}}. {{trader.name}}
+    </div>
+
+    <div class="trader__info__profit">
+      + {{trader.monthly_profit}}%
+    </div>
+  </div>
+</div>

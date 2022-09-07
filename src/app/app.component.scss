@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body, html {
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 28px;
+}
+.wrapper {
+  margin: 0 auto;
+  padding: 0 16px;
+  width: 100%;
+  max-width: 1212px;
+}
